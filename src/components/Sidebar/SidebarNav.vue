@@ -39,6 +39,10 @@
         type: Array,
         required: true,
         default: () => []
+      },
+      href: {
+        type: Boolean,
+        default: false
       }
     },
 
@@ -51,7 +55,7 @@
     methods: {
       createRoute(item) {
         let to = { name: item.type };
-
+        console.log(item)
         switch (item.type) {
           case "playlist": {
             Object.assign(to, {

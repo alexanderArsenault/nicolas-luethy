@@ -13,7 +13,6 @@
 
       <h1 class="user-view__name">{{ user.display_name }}</h1>
     </div>
-
     <entity-header
       v-if="playlists.items.length"
       title="Public Playlists"

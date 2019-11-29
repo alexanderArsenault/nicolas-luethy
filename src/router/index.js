@@ -2,7 +2,6 @@ import Vue from "vue";
 import Router from "vue-router";
 import store from "@/store";
 
-import Login from "@/views/Login";
 import UserView from "@/views/User";
 import SearchView from "@/views/Search";
 import SearchResultView from "@/views/Search/SearchResult";
@@ -21,16 +20,16 @@ import TracksCollectionView from "@/views/Collection/Tracks";
 import AlbumsCollectionView from "@/views/Collection/Albums";
 import ArtistsCollectionView from "@/views/Collection/Artists";
 
+import AboutMe from "@/views/AboutMe";
+import Skills from "@/views/Skills";
+import Work from "@/views/Work";
+import Education from "@/views/Education";
+import More from "@/views/More";
+
 Vue.use(Router);
 
 const router = new Router({
   routes: [
-    {
-      path: "/login",
-      name: "Login",
-      component: Login
-    },
-
     {
       path: "/",
       name: "Home",
@@ -73,9 +72,62 @@ const router = new Router({
     },
 
     {
+      path: "spotify",
+      name: "spotify",
+      beforeEnter() {
+        location.href = "http://spotify.com";
+      },
+      component: UserView
+    },
+
+    {
+      path: "linkedin",
+      name: "linkedin",
+      beforeEnter() {
+        location.href = "http://linkedin.com";
+      },
+      component: ArtistView
+    },
+
+    {
+      path: "instagram",
+      name: "instagram",
+      beforeEnter() {
+        location.href = "http://instagram.com";
+      },
+      component: AlbumView
+    },
+
+    {
+      path: "/about-me",
+      name: "about-me",
+      component: AboutMe
+    },
+    {
+      path: "/skills",
+      name: "skills",
+      component: Skills
+    },
+    {
+      path: "/work",
+      name: "work",
+      component: Work
+    },
+    {
+      path: "/education",
+      name: "education",
+      component: Education
+    },
+    {
+      path: "/more",
+      name: "more",
+      component: More
+    },
+
+    {
       path: "/user/:id",
       name: "user",
-      component: UserView
+      component: ArtistView
     },
 
     {
@@ -155,12 +207,6 @@ router.beforeEach(function(to, from, next) {
   if (store.getters["app/notFound"]) {
     store.dispatch("app/notFoundPage", false);
   }
-
-  if (!store.getters["auth/getAccessToken"] && to.name !== "Login") {
-    store.dispatch("auth/login");
-    next(false);
-  }
-
   next();
 });
 

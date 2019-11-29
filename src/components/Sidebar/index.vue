@@ -2,7 +2,8 @@
   <div class="sidebar">
     <div class="sidebar__inner" v-scroll @scrollReachBottom="loadMore">
       <sidebar-nav :links="browse" />
-      <sidebar-nav title="Library" :links="library" />
+      <sidebar-nav title="About me" :links="library" />
+      <sidebar-nav title="Social" :links="contacts" />
       <sidebar-nav title="Playlists" :links="playlists.items" />
     </div>
     <button class="sidebar__btn" @click="$modal.show('playlist-create-modal')">
@@ -36,7 +37,24 @@
         return [
           {
             type: "browse",
-            name: "Browse"
+            name: "Browse Nici"
+          }
+        ];
+      },
+
+      contacts() {
+        return [
+          {
+            type: "spotify",
+            name: "Spotify"
+          },
+          {
+            type: "linkedin",
+            name: "linkedIn"
+          },
+          {
+            type: "instagram",
+            name: "Instagram"
           }
         ];
       },
@@ -44,16 +62,20 @@
       library() {
         return [
           {
-            type: "tracks-collection",
-            name: "Songs"
+            type: "skills",
+            name: "Skills"
           },
           {
-            type: "albums-collection",
-            name: "Albums"
+            type: "work",
+            name: "Work"
           },
           {
-            type: "artists-collection",
-            name: "Artists"
+            type: "education",
+            name: "Education"
+          },
+          {
+            type: "more",
+            name: "More"
           }
         ];
       }

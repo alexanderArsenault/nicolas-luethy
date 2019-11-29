@@ -33,10 +33,6 @@
         init: "app/init",
         removeNotification: "notification/removeNotification"
       })
-    },
-
-    created() {
-      this.init();
     }
   };
 </script>
