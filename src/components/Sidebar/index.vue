@@ -1,17 +1,11 @@
 <template>
   <div class="sidebar">
-    <div class="sidebar__inner" v-scroll @scrollReachBottom="loadMore">
+    <div class="sidebar__inner" @scrollReachBottom="loadMore">
       <sidebar-nav :links="browse" />
       <sidebar-nav title="About me" :links="library" />
       <sidebar-nav title="Social" :links="contacts" />
       <sidebar-nav title="Playlists" :links="playlists.items" />
     </div>
-    <button class="sidebar__btn" @click="$modal.show('playlist-create-modal')">
-      <icon class="sidebar__btn-icon" name="plus" />
-      <span>New playlist</span>
-    </button>
-    <!-- @todo cover -->
-    <playlist-create-modal />
   </div>
 </template>
 
@@ -24,7 +18,6 @@
     name: "sidebar",
 
     components: {
-      PlaylistCreateModal,
       SidebarNav
     },
 
@@ -72,10 +65,6 @@
           {
             type: "education",
             name: "Education"
-          },
-          {
-            type: "more",
-            name: "More"
           }
         ];
       }

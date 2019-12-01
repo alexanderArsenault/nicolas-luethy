@@ -3,8 +3,10 @@
     <div class="artist-header">
       <div class="artist-header__text">
         <div class="caption">Intern</div>
-        <h1 class="header-text">Nicolas Leuthy</h1>
-        <v-button :onClick="contact">Contact</v-button>
+        <h1 class="header-text">Nicolas Lüthy</h1>
+        <a href="tel:+4176-509-5595">
+          <v-button :onClick="contact">Contact</v-button>
+        </a>
       </div>
     </div>
     <div class="browse-view__content">
@@ -12,35 +14,46 @@
         <h1>Dear Spotify Team</h1>
         <p>
           I am currently enrolled at the ZHAW School of Management and Law in
-          Zurich and will complete my Bachelor (Bsc) in International Business
-          Management this coming summer in 2020. For this occasion, I am on the
-          search for my next big Challenge, Quest and experience which will
-          hopefully help me shape my professional Future.
+          Zurich and will graduate my Bachelor (Bsc) in International Business
+          Management this coming June in 2020. For this occasion, I am on the
+          search for my next big Challenge, Quest and experience which will help
+          me shape my professional Future.
         </p>
         <p>
-          Since Spotify accompanied me quite a long time of my life (Since 2011
-          to be precise). Be it by helping me recovering myself from breakup
-          pain, thanks to its emotional playlists, or supporting me with music
-          24/7, everywhere I go and finally, in providing a digging platform to
-          help pushing my amateur DJ career (DJmag top 100 I&#39;m coming). To
-          say Thank you for supporting me through all this, I want to commit
-          myself to help Spotify staying market Leader within the music
-          streaming platform industry in terms of active users using my
-          creativity as well as knowledge about the music industry to
-          continuously improve Spotify and contribute my part in supplying
-          people with music 24/7. In my opinion it looks like a Win-Win
-          Situation. I will promise to contribute as much as I can while the
-          three-month Summer internship and you will provide me the perfect
-          environment to shape and improve my skill set as well as creativity.
+          Why spotify? Spotify accompanied me now for a long time of my life
+          (eight years to be precise). And I keep being amazed by it. Spotify
+          helps me recovering myself from breakup pain with its emotional
+          playlists, made my days by supporting me with music 24/7, wherever I
+          go and finally, it provides a digging platform to help pushing my
+          amateur DJ career (DJmag top 100 I'm coming). To say Thank you for
+          supporting me with all this, I would like to commit myself to Spotify.
+          With giving me the chance of supporting the marketing Team, I will
+          promise to use my knowledge about the music industry, creativity as
+          well as my self-driven personality to continuously improve Spotify and
+          contribute my part in supplying people with music 24/7.
         </p>
         <p>
-          If you would like to know more about me and my motivation, Please send
-          me an invite for an interview and I promise you will not regret it.
+          If I grabbed your attention and interest and you would like to know
+          more about me and my motivation, please feel free to contact me any
+          time.
         </p>
+        <p>
+          I would love to have the chance to prove my motivation and skillset in
+          a personal interview.
+        </p>
+        <div class="links">
+          <a href="mailto:nicolas.luethy@hotmail.ch">
+            nicolas.luethy@hotmail.ch
+          </a>
+          <a href="tel:+4176-509-5595">
+            +4176-509-5595
+          </a>
+        </div>
       </div>
       <div class="split-right">
         <lingallery
           :height="320"
+          :startImage="3"
           :items="[
             {
               id: '1',
@@ -131,18 +144,22 @@
       VButton,
       Lingallery
     },
-    method: {
-      contact() {
-        alert("contact");
-      }
+    methods: {
+      contact() {}
     }
   };
 </script>
 
 <style scoped lang="sass">
+
   .split-right ::v-deep .lingallery_thumbnails
     display: none
     visibility: hidden
+
+  @media (max-width: 1000px)
+    .split-right ::v-deep .lingallery
+      margin: auto
+
 
   .picture-caption
     text-align: center
@@ -150,9 +167,17 @@
 
   .split-left
     width: calc((100% * (3 / 5)) - 30px)
+    p
+      font-size: 14px
+
+    @media (max-width: 1000px)
+      width: 100%
+      margin-bottom: 40px
 
   .split-right
     width: calc((100% - (100% * (3 / 5)))
+    @media (max-width: 1000px)
+      width: 100%
 
   .artist-header
     position: relative
@@ -169,6 +194,10 @@
       background-position: center right
       filter: grayscale(100%);
       background-repeat: no-repeat
+      @media (max-width: 1000px)
+        background-size: cover
+        background-position: center left
+
 
     &__text
       position: relative
@@ -178,6 +207,8 @@
       filter: inital
       height: 100%
       justify-content: center
+      @media (max-width: 1000px)
+        margin-left: 15px
 
       button
         width: 200px
@@ -217,4 +248,16 @@
       line-height: 25px
       display: flex
       justify-content: space-between
+      .links
+        width: 100%
+        display: flex
+        justify-content: space-between
+        a
+          color: white
+          margin-top: 20px
+          font-size: 14px
+
+      @media (max-width: 1000px)
+        padding: 15px
+        flex-direction: column
 </style>

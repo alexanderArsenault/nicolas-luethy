@@ -24,7 +24,6 @@ import AboutMe from "@/views/AboutMe";
 import Skills from "@/views/Skills";
 import Work from "@/views/Work";
 import Education from "@/views/Education";
-import More from "@/views/More";
 
 Vue.use(Router);
 
@@ -117,11 +116,6 @@ const router = new Router({
       path: "/education",
       name: "education",
       component: Education
-    },
-    {
-      path: "/more",
-      name: "more",
-      component: More
     },
 
     {

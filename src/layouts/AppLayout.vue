@@ -2,7 +2,7 @@
   <div class="app-layout">
     <navbar />
     <div class="app-layout__wrap">
-      <sidebar />
+      <sidebar class="medium-hide" />
       <div class="app-layout__main">
         <router-view />
       </div>

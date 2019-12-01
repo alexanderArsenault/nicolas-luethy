@@ -33,7 +33,6 @@
 
       <router-link
         class="media-object__artist"
-        v-if="artists"
         v-for="(artist, index) in artists"
         :key="artist.id"
         :to="{ name: 'artist', params: { id: artist.id } }"

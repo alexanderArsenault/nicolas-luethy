@@ -1,6 +1,6 @@
 <template>
   <div class="update-modal">
-    <v-modal :modalName="modalName" width="500px">
+    <v-modal :modalName="modalName" width="500px" height="500px">
       <template slot="header">
         Update Playlist Details
       </template>

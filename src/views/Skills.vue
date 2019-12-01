@@ -14,7 +14,7 @@
         >
           <icon :name="skill.icon"></icon>
           <p class="title">{{ skill.title }}</p>
-          <p class="hover-text">{{ skill.text }}</p>
+          <p class="hover-text mobile-hide">{{ skill.text }}</p>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
             >
               <icon :name="skill.icon"></icon>
               <p class="title">{{ skill.title }}</p>
-              <p class="hover-text">{{ skill.text }}</p>
+              <p class="hover-text mobile-hide">{{ skill.text }}</p>
             </div>
           </div>
         </div>
@@ -46,12 +46,12 @@
           More
         </h1>
         <p>
-          My interests include music, sport, exploring new technologies and
-          researching wines. I'm a part of a collective which organizes concerts
-          and parties in different venues around Zurich. While studying in
-          Bordeaux, I was a part of the Vinseec Wine Association and my long
-          term personal goals include becoming a wine somalier and working where
-          business and technology intersect.
+          My interests include music, sport (football, exploring new
+          technologies and organising Music and wine events. I'm a part of a
+          collective which organizes concerts and parties in different venues
+          around Zurich. While studying in Bordeaux, I was a part of the Vinseec
+          Wine Association which helped me discover my new hobby, organizing
+          tasting events around Zurich.
         </p>
       </div>
     </div>
@@ -66,29 +66,39 @@
         strengths: [
           {
             title: "Teamplayer",
-            icon: "users"
+            icon: "users",
+            text:
+              "Gained and proved valuable Team experience while working in different Teams in my apprenticeship as well working for Bank Vontobel and working on several group projects during my current studies."
           },
           {
             title: "Goal oriented",
-            icon: "bullseye"
+            icon: "bullseye",
+            text:
+              "Always aiming for the most suitable outcome, during all my projects the scopes were appreciated and successfully delivered."
           },
           {
             title: "Problem solving",
+            text:
+              "Interacted as a mediator while facing group difficulties during projects as well as organizing events and concerts in my private life.",
             icon: "handshake"
           },
           {
             title: "Interested",
+            text:
+              "Always informed about current world news and politics as well as aware about newest trends within the Music scene. Keen on learning new skills to improve and facilitate my private or professional life.",
             icon: "map-marker"
           },
           {
             title: "Adaptable",
+            text:
+              "Adaptable to changes and always happy to receive and work with feedback and external inputs to improve my work.",
             icon: "exchange-alt"
           },
           {
             title: "Leadership",
             icon: "book-reader",
             text:
-              "Helped organize a Wine Expo with over 500 Participants during my year abroad (Salon Art Di'vin 2019)"
+              "Helped organize a Wine Expo with over 500 Participants during my year abroad and helped organize several concerts and small festival within Zurich’s electronic Music scene."
           }
         ],
         skills: [
@@ -170,15 +180,23 @@
   .content
     padding: 40px
     max-width: 1100px
+    @media (max-width: 700px)
+      padding: 15px
 
   .split-container
     display: flex
+    @media (max-width: 700px)
+      flex-direction: column
 
   .split-left
     width: calc(100% * (3 / 5))
+    @media (max-width: 700px)
+      width: 100%
 
   .split-right
     width: calc(100% - (100% * (3 / 5)))
+    @media (max-width: 700px)
+      width: 100%
 
     padding-left: 20px
     p
@@ -195,6 +213,9 @@
     width: calc(100% / 5 - 10px)
     margin-bottom: 10px
     background-size: contain
+    @media (max-width: 700px)
+      width: calc(100% / 3 - 10px)
+
     &:before
       content: ''
       padding-bottom: 100%
@@ -223,6 +244,9 @@
 
     .title
       font-size: 16px
+      text-align: center
+      @media (max-width: 700px)
+        font-size: 12px
 
     .hover-text
       display: none

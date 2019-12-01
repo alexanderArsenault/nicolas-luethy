@@ -2,7 +2,7 @@
   <div class="playlist-create-modal">
     <v-modal :modalName="modalName">
       <template slot="header">
-        Create Playlist
+        Contact Me
       </template>
       <template slot="body">
         <form>
@@ -11,7 +11,11 @@
             <input id="name" name="name" v-model="name" maxlength="100" />
           </div>
           <div>
-            <label for="description">Description</label>
+            <label for="name">Subject</label>
+            <input id="name" name="name" v-model="name" maxlength="100" />
+          </div>
+          <div>
+            <label for="description">Body</label>
             <textarea
               id="description"
               name="description"

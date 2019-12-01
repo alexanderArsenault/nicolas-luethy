@@ -45,7 +45,6 @@
     flex-flow: column
     position: absolute
     width: 100%
-    min-width: 630px
     height: 100%
     background: $c-mine-shaft
 </style>

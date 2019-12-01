@@ -80,6 +80,11 @@
     position: relative;
     padding: 0 60px;
   }
+  @media (max-width: 700px) {
+    .timeline-center {
+      display: none;
+    }
+  }
 
   .timeline-center-dot {
     width: 10px;
@@ -123,5 +128,29 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  @media (max-width: 700px) {
+    .content {
+      padding: 15px;
+    }
+
+    .timeline-item {
+      justify-content: space-between;
+    }
+
+    .timeline-text-container {
+      width: calc(50% - 15px);
+    }
+    .timeline-image-container {
+      width: calc(50% - 15px);
+    }
+
+    .timeline-center {
+      display: none;
+    }
+    .timeline-item {
+      margin-bottom: 30px;
+    }
   }
 </style>
