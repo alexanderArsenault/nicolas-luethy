@@ -1,6 +1,5 @@
 <template>
-  <div class="content">
-    <h1 class="header-text">Work</h1>
+  <div class="timeline-container">
     <div
       class="timeline-item"
       v-for="(item, index) in timeline"
@@ -17,13 +16,7 @@
         <div class="timeline-center-dot"></div>
       </div>
       <div class="timeline-image-container">
-        <div
-          class="timeline-image"
-          :style="
-            `background-image: url(${require('../assets/img/work/' +
-              item.img)})`
-          "
-        ></div>
+        <img :src="item.img" alt="" />
       </div>
     </div>
   </div>
@@ -31,61 +24,53 @@
 
 <script>
   export default {
-    name: "work",
-    data() {
-      return {
-        timeline: [
+    name: "timeline",
+    props: {
+      timeline: {
+        type: Array,
+        default: () => [
           {
-            header: "Confidas Treuhand AG",
-            body: "Commercial Apprenticeship",
-            dates: "08/2011 – 07/2014",
-            img: "1.png"
+            header: "Professional Matura for Adults",
+            body: "KV Zürich Business School",
+            dates: "08/2014 – 07/2015",
+            img: require("../assets/img/education/2.png")
           },
           {
-            header: "Bank Vontobel AG,",
-            body: "Tax Clerc",
-            dates: "11/2015 – 02/2017",
-            img: "2.png"
+            header: "Inseec School of Business and Economics, Bordeaux",
+            body:
+              "(Major International Business Management, With additional Courses in Wine and Spirits Management as well as International F&gt;inance and Accounting",
+            dates: "08/2018 – 06/2019",
+            img: require("../assets/img/education/inseec.png")
           },
           {
-            header: "ZHAW School of Management and Law",
-            body: "Event Staff",
+            header: "International Business Management BSc",
+            body: "ZHAW School of Management and Law",
             dates: "08/17 - Today",
-            img: "3.png"
+            img: require("../assets/img/education/3.png")
           }
         ]
-      };
+      }
     }
   };
 </script>
 <style scoped>
-  .content {
-    padding: 40px;
-    max-width: 1100px;
-  }
   .timeline-item {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 100px;
-    text-align: right;
-  }
-  .timeline-item:nth-of-type(2n) {
-    flex-direction: row-reverse;
-    text-align: left;
   }
 
   .timeline-center {
     position: relative;
-    padding: 0 60px;
   }
 
   .timeline-center-dot {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background-color: #1db954;
+    background-color: #fff;
   }
   .timeline-item:not(:last-of-type) .timeline-center:before {
     position: absolute;
@@ -94,9 +79,12 @@
     top: calc(100% + 50px);
     left: 50%;
     transform: translateX(-50%);
-    border-left: 1px solid #1db954;
+    border-left: 1px solid white;
   }
 
+  .timeline-item:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
   .timeline-header {
     font-size: 18px;
     margin-bottom: 20px;
@@ -117,11 +105,7 @@
     justify-content: center;
     align-items: center;
   }
-  .timeline-image {
-    width: 100%;
+  .timeline-image-container img {
     height: 60px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 </style>

@@ -7,22 +7,19 @@
         <router-view />
       </div>
     </div>
-    <player />
   </div>
 </template>
 
 <script>
   import Navbar from "@/components/Navbar";
   import Sidebar from "@/components/Sidebar";
-  import Player from "@/components/Player";
 
   export default {
     name: "AppLayout",
 
     components: {
       Navbar,
-      Sidebar,
-      Player
+      Sidebar
     }
   };
 </script>
@@ -44,7 +41,6 @@
 
     &__main
       flex-grow: 1
-      max-height: calc(100vh - 130px)
       overflow-y: auto
 
     .sidebar

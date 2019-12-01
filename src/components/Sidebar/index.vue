@@ -106,13 +106,12 @@
     background: $c-black
 
     &__inner
-      max-height: calc(100vh - 232px)
 
     &__btn
       display: flex
       align-items: center
       position: absolute
-      bottom: 90px
+      bottom: 0px
       height: 50px
       width: 100%
       margin-top: 20px

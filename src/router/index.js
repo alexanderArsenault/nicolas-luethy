@@ -75,7 +75,7 @@ const router = new Router({
       path: "spotify",
       name: "spotify",
       beforeEnter() {
-        location.href = "http://spotify.com";
+        location.href = "https://open.spotify.com/user/nicolaskicks";
       },
       component: UserView
     },
@@ -84,7 +84,7 @@ const router = new Router({
       path: "linkedin",
       name: "linkedin",
       beforeEnter() {
-        location.href = "http://linkedin.com";
+        location.href = "https://www.linkedin.com/in/nicolasluethy/";
       },
       component: ArtistView
     },
@@ -93,7 +93,7 @@ const router = new Router({
       path: "instagram",
       name: "instagram",
       beforeEnter() {
-        location.href = "http://instagram.com";
+        location.href = "https://www.instagram.com/nicolasluethy/";
       },
       component: AlbumView
     },

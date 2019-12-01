@@ -1,9 +1,9 @@
 <template>
   <div class="navbar-history">
-    <a class="navbar-history__link" @click="onPrevClick">
+    <a class="navbar-history__link">
       <icon name="chevron-left" />
     </a>
-    <a class="navbar-history__link" @click="onNextClick">
+    <a class="navbar-history__link">
       <icon name="chevron-right" />
     </a>
   </div>
@@ -33,5 +33,4 @@
     &__link
       margin: auto 5px
       line-height: 0
-      cursor: pointer
 </style>

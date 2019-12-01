@@ -245,7 +245,6 @@
     &__avatar
       position: relative
       min-width: 130px
-      min-height: 130px
       width: 100%
       height: 100%
       background: $c-sirocco

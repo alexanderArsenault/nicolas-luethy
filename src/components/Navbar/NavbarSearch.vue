@@ -1,16 +1,20 @@
 <template>
   <form class="navbar-search">
-    <input
-      @focus="onFocus"
-      @keyup="onKeyUp"
-      class="navbar-search__input"
-      type="search"
-      placeholder="Search"
-      aria-label="Search"
-    />
-    <button class="navbar-search__btn">
-      <icon name="search" />
-    </button>
+    <div class="search-container">
+      <input
+        class="navbar-search__input"
+        type="search"
+        v-model="text"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="navbar-search__btn">
+        <icon name="search" />
+      </button>
+    </div>
+    <p class="search-text" v-if="text.length > 0">
+      - Only one candidate found!
+    </p>
   </form>
 </template>
 
@@ -20,51 +24,34 @@
 
   export default {
     name: "navbar-search",
+    data() {
+      return {
+        text: ""
+      };
+    },
 
     methods: {
       ...mapActions({
         search: "search/search"
-      }),
-
-      onFocus(e) {
-        const {
-          name,
-          params: { query }
-        } = this.$route;
-
-        const { value } = e.target;
-
-        if (value) {
-          router.push({ name: "search-result", params: { query: value } });
-        } else if (name !== "search" && !query) {
-          router.push("/search");
-        }
-      },
-
-      onKeyUp(e) {
-        const { value } = e.target;
-
-        if (value !== "") {
-          this.$router.replace({
-            name: "search-result",
-            params: { query: value }
-          });
-          this.search(value);
-        }
-      }
+      })
     }
   };
 </script>
 
 <style scoped lang="sass">
+  .search-text
+    width: 300px
+    padding-left: 15px
+    font-size: 12px
 
-  .navbar-search
+  .search-container
     position: relative
-    width: 160px
     font-size: 14px
 
+  .navbar-search
     &__input
       height: 25px
+      max-width: 150px
       margin: 0
       padding-right: 20px
       border-radius: 30px
