@@ -1,5 +1,6 @@
 module.exports = {
-  baseUrl: process.env.NODE_ENV === "production" ? "/vue-spotify/" : "/",
+  baseUrl: process.env.NODE_ENV === "production" ? "/nicolasluethy/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/nicolasluethy/" : "/",
 
   devServer: {
     port: 8080
