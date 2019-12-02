@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === "production" ? "/nicolas-luethy/" : "/",
+  publicPath: "/",
 
   devServer: {
     port: 8080
