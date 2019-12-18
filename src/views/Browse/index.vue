@@ -14,32 +14,32 @@
         <h1>Dear Spotify Team</h1>
         <p>
           I am currently enrolled at the ZHAW School of Management and Law in
-          Zurich and will graduate my Bachelor (Bsc) in International Business
-          Management this coming June in 2020. For this occasion, I am on the
-          search for my next big Challenge, Quest and experience which will help
-          me shape my professional Future.
+          Zürich and will graduate with a Bachelor (Bsc) in International
+          Business Management in June 2020. With this in mind, I am beginning to
+          look around for the next big step to help shape my professional
+          future.
         </p>
         <p>
-          Why spotify? Spotify accompanied me now for a long time of my life
-          (eight years to be precise). And I keep being amazed by it. Spotify
-          helps me recovering myself from breakup pain with its emotional
-          playlists, made my days by supporting me with music 24/7, wherever I
-          go and finally, it provides a digging platform to help pushing my
-          amateur DJ career (DJmag top 100 I'm coming). To say Thank you for
-          supporting me with all this, I would like to commit myself to Spotify.
-          With giving me the chance of supporting the marketing Team, I will
-          promise to use my knowledge about the music industry, creativity as
-          well as my self-driven personality to continuously improve Spotify and
-          contribute my part in supplying people with music 24/7.
+          Spotify! Spotify has been a constant part of my life for the last
+          eight years and it continues to amaze me every day. Spotify's
+          emotional playlists have helped me recover from painful breakups,
+          Spotify has always supported me through my busy and sometimes
+          turbulent student life and it also provides a digging platform to help
+          push my DJ career ( Djmag top 100 – here I come!) So Spotify has
+          always been there for me, and now I would like to have the chance to
+          be there for Spotify. If you would give me the chance of joining your
+          marketing Team, I will promise to use my knowledge about the music
+          industry, my creativity as well as my self-driven personality to
+          continuously improve Spotify and contribute my part in supplying
+          people with amazing music 24/7.
         </p>
         <p>
-          If I grabbed your attention and interest and you would like to know
-          more about me and my motivation, please feel free to contact me any
-          time.
+          I hope I have grabbed your attention and interest and would be very
+          happy if I could prove to you my motivation and acquired skills in a
+          personal interview.
         </p>
         <p>
-          I would love to have the chance to prove my motivation and skillset in
-          a personal interview.
+          Please do contact me whenever convenient to you.
         </p>
         <div class="links">
           <a href="mailto:nicolas.luethy@hotmail.ch">
@@ -48,6 +48,7 @@
           <a href="tel:+4176-509-5595">
             +4176-509-5595
           </a>
+          <a href="#">References upon request.</a>
         </div>
       </div>
       <div class="split-right">

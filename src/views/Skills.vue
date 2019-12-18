@@ -53,6 +53,23 @@
           Wine Association which helped me discover my new hobby, organizing
           tasting events around Zurich.
         </p>
+        <h3>
+          German
+        </h3>
+        <ul>
+          <li>Native Language</li>
+        </ul>
+        <h3>English</h3>
+        <ul>
+          <li>Toefl 105/120</li>
+          <li>Full Bachelor program in English</li>
+        </ul>
+        <h3>French</h3>
+        <ul>
+          <li>Year abroad in Bordeaux, with several courses in French.</li>
+          <li>Professional Skills, perfectly able to hold conversations.</li>
+          <li>Diplôme de français professionnel B2 (DFP)</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -68,51 +85,50 @@
             title: "Teamplayer",
             icon: "users",
             text:
-              "Gained and proved valuable Team experience while working in different Teams in my apprenticeship as well working for Bank Vontobel and working on several group projects during my current studies."
+              "Gained and proved valuable Team experience while working in different Teams in my apprenticeship as well working for Bank Vontobel and working on several group projects during my current studies.Gained and proved valuable team experience while working in different team’s in my previous work experiences as well as working on group projects during my studies."
           },
           {
             title: "Goal oriented",
             icon: "bullseye",
-            text:
-              "Always aiming for the most suitable outcome, during all my projects the scopes were appreciated and successfully delivered."
+            text: "Always aiming for the most suitable outcome."
           },
           {
             title: "Problem solving",
             text:
-              "Interacted as a mediator while facing group difficulties during projects as well as organizing events and concerts in my private life.",
+              "Interacted as a mediator while facing group difficulties during business projects as well as during organization of events and concerts in my private life.",
             icon: "handshake"
           },
           {
             title: "Interested",
             text:
-              "Always informed about current world news and politics as well as aware about newest trends within the Music scene. Keen on learning new skills to improve and facilitate my private or professional life.",
+              "Always informed about current world news and politics. Aware about newest trends within the Music scene. Keen on learning new skills to improve and facilitate my private or professional life.",
             icon: "map-marker"
           },
           {
             title: "Adaptable",
             text:
-              "Adaptable to changes and always happy to receive and work with feedback and external inputs to improve my work.",
+              "Adaptable to changes and always happy to receive feedback and external inputs to improve my work.",
             icon: "exchange-alt"
           },
           {
             title: "Leadership",
             icon: "book-reader",
             text:
-              "Helped organize a Wine Expo with over 500 Participants during my year abroad and helped organize several concerts and small festival within Zurich’s electronic Music scene."
+              "Helped organize a Wine Expo with over 500 Participants during my year abroad and helped organize concerts and small festival within Zurich’s electronic Music scene."
           }
         ],
         skills: [
           {
             title: "Word",
             text:
-              "Fully Experienced knowledge by Application in all my papers.",
+              "Advanced knowledge by using it in all my papers since high school.",
             icon: "file-word",
             img: "word.jpg"
           },
           {
             title: "Excel",
             text:
-              "Very advanced experiences Using advanced formulas that have been used directly in scoring models and data analysis while working at Bank Vontobel and during my Projects during my studies",
+              "Using complex formulas that have been applied in scoring models and data analysis while working at Bank Vontobel as well as in projects during my studies.",
             icon: "file-excel",
             img: "excel.jpg"
           },
@@ -120,33 +136,33 @@
             title: "PowerPoint",
             img: "ppt.jpg",
             text:
-              "Professionally use to direct and implement presentations. Perfected my PowerPoint skills over the year with updates from Microsoft office.",
+              "Professionally used for presentations at university as well as at work.",
             icon: "file-powerpoint"
           },
           {
             title: "Outlook",
             img: "ppt.jpg",
             text:
-              "Used on a daily-base while my apprenticeship and while working a Bank Vontobel. Furthermore, using the Calendar to coordinate meetings and send invitations as well as a folder system to keep track of my deadlines.",
+              "Used on a daily-base while working at Bank Vontobel. Moreover, the calendar was used to coordinate meetings and send invitations as well as a come up with folder systems to keep track of my deadlines.",
             icon: "envelope"
           },
           {
             title: "Microsoft  Teams",
             img: "teams.jpg",
             text:
-              "Professionally used as a communication tool as well as a document sharing platform within different Group projects collaborating with external companies during my studies.",
+              "Professionally used as a communication tool and as a document sharing platform throughout different Group projects collaborating with external companies during while studying.",
             icon: "user-friends"
           },
           {
             title: "Python",
             img: "python.jpg",
-            text: "Udemy bootcamp (in progress)",
+            text: "Udemy bootcamp",
             icon: "brands/python"
           },
           {
             title: "Javascript",
             img: "js.jpg",
-            text: "Udemy Bootcamp (in progress)",
+            text: "Udemy Bootcamp",
             icon: "brands/js-square"
           },
           {
@@ -160,14 +176,14 @@
             title: "Sage Buchhaltung",
             img: "sage.jpg",
             text:
-              "Professionally used to do the accounting for different clients while my Apprenticeship.",
+              "Professionally used to do the accounting for different clients while my apprenticeship.",
             icon: "piggy-bank"
           },
           {
             title: "Google Drive",
             img: "word.jpg",
             text:
-              "Regularly used as a File sharing platform in group works, especially while my Year abroad in Bordeaux.",
+              "Regularly used as a file sharing platform in group projects, especially while my year abroad in Bordeaux.",
             icon: "brands/google-drive"
           }
         ]
